@@ -67,11 +67,11 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 If you use this code or our findings in your research, please cite:
 
 ```bibtex
-@inproceedings{jumakhan2026longitudinal,
-  title={Longitudinal Affective Forecasting: Architectures for Generalization, State Change, and Trajectory Prediction},
-  author={Jumakhan, Haseebullah and Assad, Soud and Ahmad, Seyed Abdullah},
-  booktitle={Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)},
-  year={2026}
+@article{asaad2025hybrid,
+title={A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features},
+author={Asaad, Soud and Deriche, Mohamed},
+journal={Proceedings of ICSPIS 2025},
+year={2025}
 }
 ```
 ---
