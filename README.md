@@ -46,3 +46,37 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 - Fusion: 33 + 6 = 39-D vector.
 - Classifiers: SVM, KNN, RF, XGBoost, LightGBM (with grid search CV).
 - Evaluation: Accuracy, ROC-AUC, precision/recall/F1 on stratified splits.
+
+---
+
+## Results
+- Best Model: LightGBM on 39-D fusion → ROC-AUC: 0.958, Accuracy: 0.944
+- See `/results/` for plots and tables.
+
+| Experiment | Feature Set | Best Classifier | Accuracy | ROC-AUC |
+|------------|-------------|-----------------|----------|---------|
+| E1        | 33 handcrafted | LGBM/XGB       | 0.907   | 0.883  |
+| E2        | 33 + PCA      | LGBM/XGB       | 0.915   | 0.917  |
+| E3        | LDA(6) only   | RF/LGBM        | 0.907   | 0.902  |
+| E4        | 39-D fusion   | LGBM           | 0.944   | 0.958  |
+
+---
+
+## Citation
+If you use this code, please cite our paper:
+@article{asaad2025hybrid,
+  title={A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features},
+  author={Asaad, Soud and Deriche, Mohamed},
+  journal={Proceedings of ICSPIS 2025},
+  year={2025}
+}
+
+---
+
+## License
+MIT License. See [LICENSE](LICENSE) for details.
+
+## Acknowledgments
+- HAM10000 dataset creators.
+- Funded by Deanship of Research, Ajman University (Project 2025-IDG-CEIT-4).
+- Co-author: Prof. Mohamed Deriche.
