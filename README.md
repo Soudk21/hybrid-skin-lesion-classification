@@ -10,21 +10,6 @@ This repository contains the PyTorch implementation of our **ICSPIS 2025** submi
 
 Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (shape, color, texture) with **6 supervised LDA-reduced deep features** extracted from a lightly fine-tuned **ResNet-50**. Using classical ML classifiers such as **LightGBM**, we achieve a **ROC-AUC of 0.958** and **accuracy of 0.944**, outperforming individual feature sets while remaining computationally efficient for clinical deployment on consumer-grade hardware.
 
----
-
-This is the official code for the ICSPIS 2025 paper:  
-**A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features**  
-Authors: Soud Asaad, Mohamed Deriche (Ajman University)  
-[Download Paper (PDF)](paper/Asaad_Deriche_Paper.pdf)
-
-## Features
-- Preprocessing: Lesion masking, augmentation (rotations, flips, shifts), standardization.
-- Handcrafted Features: Asymmetry, border irregularity, GLCM, LBP, RGB statistics.
-- Deep Features: ResNet-50 fine-tuned (5 epochs, LR=1e-5), penultimate activations reduced via LDA to 6 components.
-- Fusion: 33 + 6 = 39-D vector.
-- Classifiers: SVM, KNN, RF, XGBoost, LightGBM (with grid search CV).
-- Evaluation: Accuracy, ROC-AUC, precision/recall/F1 on stratified splits.
-
 ## 📂 Repository Structure
 
 ```text
@@ -44,3 +29,20 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 ├── paper/                    # Conference paper PDF
 ├── README.md
 └── requirements.txt
+```
+---
+
+This is the official code for the ICSPIS 2025 paper:  
+**A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features**  
+Authors: Soud Asaad, Mohamed Deriche (Ajman University)  
+[Download Paper (PDF)](paper/Asaad_Deriche_Paper.pdf)
+
+---
+
+## Features
+- Preprocessing: Lesion masking, augmentation (rotations, flips, shifts), standardization.
+- Handcrafted Features: Asymmetry, border irregularity, GLCM, LBP, RGB statistics.
+- Deep Features: ResNet-50 fine-tuned (5 epochs, LR=1e-5), penultimate activations reduced via LDA to 6 components.
+- Fusion: 33 + 6 = 39-D vector.
+- Classifiers: SVM, KNN, RF, XGBoost, LightGBM (with grid search CV).
+- Evaluation: Accuracy, ROC-AUC, precision/recall/F1 on stratified splits.
