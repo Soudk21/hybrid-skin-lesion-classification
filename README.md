@@ -12,6 +12,28 @@ Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (sh
 
 ---
 
+This is the official code for the ICSPIS 2025 paper:  
+**A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features**  
+Authors: Soud Asaad, Mohamed Deriche (Ajman University)  
+[Download Paper (PDF)](paper/Asaad_Deriche_ICSPIS2025.pdf)
+
+## Features
+- Preprocessing: Lesion masking, augmentation (rotations, flips, shifts), standardization.
+- Handcrafted Features: Asymmetry, border irregularity, GLCM, LBP, RGB statistics.
+- Deep Features: ResNet-50 fine-tuned (5 epochs, LR=1e-5), penultimate activations reduced via LDA to 6 components.
+- Fusion: 33 + 6 = 39-D vector.
+- Classifiers: SVM, KNN, RF, XGBoost, LightGBM (with grid search CV).
+- Evaluation: Accuracy, ROC-AUC, precision/recall/F1 on stratified splits.
+
+## Installation
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/hybrid-skin-lesion-classification.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Download HAM10000 dataset from [Kaggle](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) and place in `/data/` (or symlink).
+
+## Usage
+Run the main notebook:
+
+
 ## 📂 Repository Structure
 
 ```text
