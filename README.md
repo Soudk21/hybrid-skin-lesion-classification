@@ -25,15 +25,6 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 - Classifiers: SVM, KNN, RF, XGBoost, LightGBM (with grid search CV).
 - Evaluation: Accuracy, ROC-AUC, precision/recall/F1 on stratified splits.
 
-## Installation
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/hybrid-skin-lesion-classification.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Download HAM10000 dataset from [Kaggle](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) and place in `/data/` (or symlink).
-
-## Usage
-Run the main notebook:
-
-
 ## 📂 Repository Structure
 
 ```text
