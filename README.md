@@ -1,6 +1,5 @@
 # A Hybrid Approach for Skin Lesion ClassificationCombining Handcrafted and Deep Learning Features
 
-cat << 'EOF' > README.md
 # Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features
 
 **License:** MIT  
