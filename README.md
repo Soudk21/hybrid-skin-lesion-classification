@@ -4,13 +4,13 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 
-## 📄 Abstract
+## Abstract
 
 This repository contains the PyTorch implementation of our **ICSPIS 2025** submission for binary melanoma detection on the **HAM10000** dataset. We address key challenges in dermoscopy-based skin cancer diagnosis: class imbalance, limited data, and the need for lightweight, interpretable models.
 
 Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (shape, color, texture) with **6 supervised LDA-reduced deep features** extracted from a lightly fine-tuned **ResNet-50**. Using classical ML classifiers such as **LightGBM**, we achieve a **ROC-AUC of 0.958** and **accuracy of 0.944**, outperforming individual feature sets while remaining computationally efficient for clinical deployment on consumer-grade hardware.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── src/                      # Source code
@@ -63,14 +63,17 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 ---
 
 ## Citation
-If you use this code, please cite our paper:
-@article{asaad2025hybrid,
-  title={A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features},
-  author={Asaad, Soud and Deriche, Mohamed},
-  journal={Proceedings of ICSPIS 2025},
-  year={2025}
-}
 
+If you use this code or our findings in your research, please cite:
+
+```bibtex
+@inproceedings{jumakhan2026longitudinal,
+  title={Longitudinal Affective Forecasting: Architectures for Generalization, State Change, and Trajectory Prediction},
+  author={Jumakhan, Haseebullah and Assad, Soud and Ahmad, Seyed Abdullah},
+  booktitle={Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)},
+  year={2026}
+}
+```
 ---
 
 ## License
