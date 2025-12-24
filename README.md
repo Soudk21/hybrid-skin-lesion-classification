@@ -15,7 +15,7 @@ Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (sh
 This is the official code for the ICSPIS 2025 paper:  
 **A Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features**  
 Authors: Soud Asaad, Mohamed Deriche (Ajman University)  
-[Download Paper (PDF)](paper/Asaad_Deriche_ICSPIS2025.pdf)
+[Download Paper (PDF)](paper/Asaad_Deriche_Paper.pdf)
 
 ## Features
 - Preprocessing: Lesion masking, augmentation (rotations, flips, shifts), standardization.
