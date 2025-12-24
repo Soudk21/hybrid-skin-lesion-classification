@@ -1,11 +1,8 @@
-# A Hybrid Approach for Skin Lesion ClassificationCombining Handcrafted and Deep Learning Features
-
 # Hybrid Approach for Skin Lesion Classification Combining Handcrafted and Deep Learning Features
 
-**License:** MIT  
-**Python:** 3.10+  
-**Framework:** PyTorch  
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 ---
 
 ## 📄 Abstract
