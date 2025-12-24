@@ -4,13 +4,13 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 
-## Abstract
+## 📄 Abstract
 
 This repository contains the PyTorch implementation of our **ICSPIS 2025** submission for binary melanoma detection on the **HAM10000** dataset. We address key challenges in dermoscopy-based skin cancer diagnosis: class imbalance, limited data, and the need for lightweight, interpretable models.
 
 Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (shape, color, texture) with **6 supervised LDA-reduced deep features** extracted from a lightly fine-tuned **ResNet-50**. Using classical ML classifiers such as **LightGBM**, we achieve a **ROC-AUC of 0.958** and **accuracy of 0.944**, outperforming individual feature sets while remaining computationally efficient for clinical deployment on consumer-grade hardware.
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```text
 ├── src/                      # Source code
@@ -49,7 +49,7 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 
 ---
 
-## Results
+## 📊 Results
 - Best Model: LightGBM on 39-D fusion → ROC-AUC: 0.958, Accuracy: 0.944
 - See `/results/` for plots and tables.
 
@@ -62,7 +62,17 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 
 ---
 
-## Citation
+## License
+MIT License. See [LICENSE](LICENSE) for details.
+
+## 🤝 Acknowledgments
+- HAM10000 dataset creators.
+- Funded by Deanship of Research, Ajman University (Project 2025-IDG-CEIT-4).
+- Co-author: Prof. Mohamed Deriche.
+
+---
+
+## 📜 Citation
 
 If you use this code or our findings in your research, please cite:
 
@@ -76,10 +86,3 @@ year={2025}
 ```
 ---
 
-## License
-MIT License. See [LICENSE](LICENSE) for details.
-
-## Acknowledgments
-- HAM10000 dataset creators.
-- Funded by Deanship of Research, Ajman University (Project 2025-IDG-CEIT-4).
-- Co-author: Prof. Mohamed Deriche.
