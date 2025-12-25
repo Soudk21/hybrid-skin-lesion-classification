@@ -23,9 +23,9 @@ Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (sh
 │   └── fusion_and_final_classification.ipynb # Classification using 6 LDA-reduced Feature +  33 handcrafted features
 ├── paper/
 │   └── Asaad_Deriche_Paper.pdf
-├── README.md                           
-├── requirements.txt                    # List of dependencies
-└── LICENSE                             
+├── LICENSE                           
+├── README.md                    
+└── requirements.txt             # List of dependencies                
 ```
 ---
 
