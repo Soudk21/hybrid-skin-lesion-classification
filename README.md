@@ -13,22 +13,18 @@ Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (sh
 ## 📂 Repository Structure
 
 ```text
-├── src/                      # Source code
-│   ├── preprocessing.py
-│   ├── handcrafted_features.py
-│   ├── deep_features.py
-│   ├── fusion_and_classification.py
-│   └── utils.py
-├── notebooks/                # Jupyter notebooks
-│   ├── main_pipeline.ipynb
-│   ├── experiments_E1_E4.ipynb
-│   └── visualization.ipynb
-├── data/                     # Dataset instructions (HAM10000 not included)
-├── models/                   # Saved models (e.g., LightGBM pickles)
-├── results/                  # Figures, ROC curves, CSVs
-├── paper/                    # Conference paper PDF
+├── notebooks/ # Jupyter notebooks for the full pipeline (results and graphs embedded inside)
+│ ├── preprocessing.ipynb # Dataset loading, lesion masking, augmentation, splits, standardization
+│ ├── handcrafted_features.ipynb # Extracts 33 handcrafted features (shape, color, texture) and saves as CSV/pickle
+│ ├── deep_features.ipynb # Fine-tunes ResNet-50, extracts activations, applies LDA to 6 components, saves as CSV/pickle
+│ ├── feature_fusion.ipynb # Loads features, fuses to 39-D vector, includes PCA experiments
+│ └── classification_and_results.ipynb # Trains classifiers (SVM, KNN, RF, XGBoost, LightGBM), computes metrics, generates plots/tables
+├── paper/ # Conference paper PDF
+│ └── Asaad_Deriche_ICSPIS2025.pdf
+├── data/ # Instructions for HAM10000 (dataset not included - link to Kaggle)
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── LICENSE
 ```
 ---
 
