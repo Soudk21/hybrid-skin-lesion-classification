@@ -59,13 +59,11 @@ Authors: Soud Asaad, Mohamed Deriche (Ajman University)
 
 ---
 
-## License
-MIT License. See [LICENSE](LICENSE) for details.
-
-## 🤝 Acknowledgments
+## 🤝 Acknowledgments & License
 - HAM10000 dataset creators.
 - Funded by Deanship of Research, Ajman University (Project 2025-IDG-CEIT-4).
 - Co-author: Prof. Mohamed Deriche.
+- MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
