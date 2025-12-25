@@ -13,18 +13,19 @@ Our **hybrid framework** fuses **33 handcrafted dermatological descriptors** (sh
 ## 📂 Repository Structure
 
 ```text
-├── notebooks/ # Jupyter notebooks for the full pipeline (results and graphs embedded inside)
-│ ├── preprocessing.ipynb # Dataset loading, lesion masking, augmentation, splits, standardization
-│ ├── handcrafted_features.ipynb # Extracts 33 handcrafted features (shape, color, texture) and saves as CSV/pickle
-│ ├── deep_features.ipynb # Fine-tunes ResNet-50, extracts activations, applies LDA to 6 components, saves as CSV/pickle
-│ ├── feature_fusion.ipynb # Loads features, fuses to 39-D vector, includes PCA experiments
-│ └── classification_and_results.ipynb # Trains classifiers (SVM, KNN, RF, XGBoost, LightGBM), computes metrics, generates plots/tables
-├── paper/ # Conference paper PDF
-│ └── Asaad_Deriche_ICSPIS2025.pdf
-├── data/ # Instructions for HAM10000 (dataset not included - link to Kaggle)
-├── README.md
-├── requirements.txt
-└── LICENSE
+├── data/
+│   └── README.md                       # Contains the Kaggle link
+├── notebooks/
+│   ├── handcrafted_features.ipynb      # Cleaned extraction for handcrafted features
+│   ├── handcrafted-features-33-svm-k... # Classification using 33 handcrafted features
+│   ├── deep_features_resnet50.ipynb     # LDA Features extraction using FT ResNet-50
+│   ├── lda-features-svm-knn-rf-xgb-lg... # Classification using LDA-reduced features
+│   └── fusion_and_final_classification.ipynb # Classification using 6 LDA-reduced Feature +  33 handcrafted features
+├── paper/
+│   └── Asaad_Deriche_Paper.pdf
+├── README.md                           
+├── requirements.txt                    # List of dependencies
+└── LICENSE                             
 ```
 ---
 
